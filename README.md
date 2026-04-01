@@ -4,53 +4,23 @@
 
 ## Описание
 
-Memory Game — игра на развитие памяти. 16 карточек (8 пар) с фруктовыми эмодзи. Подсчёт ходов, анимация переворота, адаптивный дизайн.
+Memory Game — игра на развитие памяти с таймером и рекордами. 16 карточек (8 пар) в режиме 4×4 или 36 карточек (18 пар) в режиме 6×6. Подсчёт ходов, таймер, сохранение лучших результатов, адаптивный дизайн.
 
-## Установка
+## Быстрый старт
 
-### Локальный запуск
-
-1. Клонируй репозиторий:
+### macOS/Linux
 ```bash
-git clone <URL>
-cd AITasks
+git clone <URL> && cd AITasks && open src/index.html
 ```
 
-2. Открой `index.html`:
-```bash
-open index.html      # macOS
-start index.html     # Windows
-xdg-open index.html  # Linux
-```
-
-### Через локальный сервер
-
-Для лучшей производительности:
-```bash
-python3 -m http.server 8000  # Python 3
-npx http-server              # Node.js
-```
-
-Открой `http://localhost:8000`.
-
-## Быстрые команды
-
-**macOS/Linux:**
-```bash
-git clone <URL> && cd AITasks && open index.html
-python3 -m http.server 8000
-```
-
-**Windows PowerShell:**
+### Windows PowerShell
 ```powershell
-git clone <URL>; cd AITasks; start index.html
-python -m http.server 8000
+git clone <URL>; cd AITasks; start src/index.html
 ```
 
-**Windows CMD:**
+### Windows CMD
 ```cmd
-git clone <URL> && cd AITasks && start index.html
-python -m http.server 8000
+git clone <URL> && cd AITasks && start src/index.html
 ```
 
 ## Геймплей
@@ -59,25 +29,11 @@ python -m http.server 8000
 2. Найди пару с таким же символом
 3. Совпали — остаются открытыми
 4. Не совпали — переворачиваются обратно
-5. Цель: найти все 8 пар за минимальное число ходов
+5. Цель: найти все пары за минимальное время и число ходов
 
-## Технические детали
+## Разработка
 
-- HTML5, CSS3, JavaScript (ES6+)
-- Классовая архитектура
-- CSS Grid для игрового поля
-- Flexbox для компоновки
-- CSS transitions для анимаций
-- Поддержка всех современных браузеров
-
-## Структура
-
-```
-AITasks/
-├── index.html
-├── game.js
-└── README.md
-```
+Подробные инструкции по установке, разработке и тестированию в [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Лицензия
 
